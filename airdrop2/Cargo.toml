@@ -1,0 +1,19 @@
+[package]
+name = "airdrop2"
+version = "0.1.0"
+edition = "2021"   # use 2021 (2024 is not yet stable)
+
+[dependencies]
+bs58 = "0.5.1"
+solana-client = "3.0.3"
+solana-sdk = "3.0.0"
+solana-program = "3.0.0"
+solana-system-interface = "2.0.0"
+
+[[bin]]
+name = "jsontobase58"
+path = "JsonToBase58.rs"
+
+[[bin]]
+name = "base58tojson"
+path = "Base58ToJson.rs"
