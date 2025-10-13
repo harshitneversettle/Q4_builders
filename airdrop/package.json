@@ -9,7 +9,8 @@
     "airdrop": "tsx ./airdrop.ts",
     "transfer": "tsx ./transfer.ts",
     "enroll": "tsx ./enroll.ts",
-    "generate-client": "tsx ./scripts/generate-client.ts"
+    "generate-client": "tsx ./scripts/generate-client.ts" ,
+    "getPda" : "tsx ./getPda.ts" 
   },
   "dependencies": {
     "@codama/nodes-from-anchor": "^1.2.9",
