@@ -59,7 +59,7 @@ pub fn handler(ctx: Context<DepositCollateral> , amount : u64  ) -> Result<()>{
     token::transfer(cpi_ctx, amount)?;
 
     pool.collateral_amount += amount ;
-    msg!("✅ Deposited: {} tokens into vault {}", amount, ctx.accounts.vault_ata.key());
+    msg!("Deposited: {} tokens into vault {}", amount, ctx.accounts.vault_ata.key());
 
     Ok(())
 }

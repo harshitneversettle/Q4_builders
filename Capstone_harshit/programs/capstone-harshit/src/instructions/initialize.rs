@@ -35,6 +35,6 @@ pub fn handler(ctx: Context<InitializePool>)->Result<()>{
     pool.bump = ctx.bumps.pool_state ;
     pool.interest_rate = 500 ;     // 5%
     pool.last_update_time = 0 ;
-    msg!("✅ Personal pool initialized for user: {}", pool.owner);
+    msg!(" Personal pool initialized for user: {}", pool.owner);
     Ok(())
 }
